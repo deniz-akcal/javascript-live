@@ -25,7 +25,7 @@ var scores = [88, 84, 100, 92, 70, 76, 76, 84, 86, 98];
 
 var sum = 0;
 
-for(score of scores) {
+for(let score of scores) {
   sum += score;
 }
 
