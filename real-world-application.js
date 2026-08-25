@@ -66,3 +66,9 @@ var crayola1990 = [
  * Take advantage of the methods available on strings http://www.w3schools.com/js/js_string_methods.asp
  * There are multiple ways to do something like this but you might consider using split and join
  */
+
+for(let i = 0; i < crayola1990.length; i++) {
+	crayola1990[i] = crayola1990[i].replaceAll(" ", "-").toLowerCase();
+}
+
+console.log("crayola1990: " + crayola1990);
