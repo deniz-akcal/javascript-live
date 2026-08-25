@@ -15,3 +15,6 @@ console.log(me);
 console.log("========================================================")
 
 // 2. Iterate over the object to console.log the property or key names
+for( const key of Object.keys(me) ) {
+    console.log(key);
+}
