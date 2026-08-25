@@ -57,3 +57,24 @@ console.log("========================================================")
 
 // 3. Woops after adding all of those people to the same contacts list you realized you need a list just the instructors.
 // create a new variable named instructors and populate it using the contacts array.
+var instructors = [];
+
+for(let i = 0; i < contacts.length; i++) {
+    for( const [key, value] of Object.entries(contacts[i]) ) {
+        // console.log("key: " + key);
+        // console.log("value: " + value);
+        if(key === "title" && value === "instructor") {
+            // console.log("key, value: " + key + ", " + value);
+            instructors.push(contacts[i]);
+        }
+    }
+}
+
+console.log("Just checking:");
+console.log("instructors: " + instructors);
+for(let i = 0; i < instructors.length; i++) {
+    for( const [key, value] of Object.entries(instructors[i]) ) {
+        console.log("key: " + key);
+        console.log("value: " + value);
+    }
+}
