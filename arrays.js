@@ -2,6 +2,9 @@
 
 var contacts = [];
 
+console.log(contacts.length);
+
+console.log("========================================================")
 
 // 2. Add the following people to the contacts array.
 
